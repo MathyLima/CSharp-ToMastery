@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace GamingOrganization.API.Controllers
 {
@@ -7,5 +6,11 @@ namespace GamingOrganization.API.Controllers
     [ApiController]
     public class ProgressController : ControllerBase
     {
+        [HttpGet]
+        [Route("me")]
+        public IActionResult MyProgress()
+        {
+            return Ok();
+        }
     }
 }
