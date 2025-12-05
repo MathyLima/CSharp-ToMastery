@@ -29,12 +29,12 @@ namespace GamingOrganization.API.Controllers
         }
 
         [HttpGet]
-        [Route("{id}")]
+        [Route("{Id}")]
         [ProducesResponseType(typeof(ResponseUserJson),StatusCodes.Status204NoContent)]
         [ProducesResponseType(typeof(NotFoundException),StatusCodes.Status404NotFound)]
-        public IActionResult GetById([FromRoute] Guid id) {
+        public IActionResult GetById([FromRoute] Guid Id) {
             var useCase = new GetByIdUserUseCase();
-            var response = useCase.Execute(id);
+            var response = useCase.Execute(Id);
             return Ok(response);
         }
 
@@ -55,12 +55,12 @@ namespace GamingOrganization.API.Controllers
         }
 
         [HttpDelete]
-        [Route("{id}")]
+        [Route("{Id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(typeof(NotFoundException),StatusCodes.Status404NotFound)]
-        public IActionResult Delete([FromRoute] Guid id) {
+        public IActionResult Delete([FromRoute] Guid Id) {
             var useCase = new DeleteUserUseCase();
-            useCase.Execute(id);
+            useCase.Execute(Id);
             return NoContent();
         }
 

@@ -9,3 +9,15 @@ C:\Users\mathe\OneDrive\Documentos\Projetos_Pessoais\C#\GamingOrganization\Commu
 C:\Users\mathe\OneDrive\Documentos\Projetos_Pessoais\C#\GamingOrganization\Communication\obj\Debug\net10.0\refint\GammingOrganization.Communication.dll
 C:\Users\mathe\OneDrive\Documentos\Projetos_Pessoais\C#\GamingOrganization\Communication\obj\Debug\net10.0\GammingOrganization.Communication.pdb
 C:\Users\mathe\OneDrive\Documentos\Projetos_Pessoais\C#\GamingOrganization\Communication\obj\Debug\net10.0\ref\GammingOrganization.Communication.dll
+C:\Users\mathe\OneDrive\Documentos\C#Masterclass\GamingOrganization\Communication\bin\Debug\net10.0\GammingOrganization.Communication.deps.json
+C:\Users\mathe\OneDrive\Documentos\C#Masterclass\GamingOrganization\Communication\bin\Debug\net10.0\GammingOrganization.Communication.dll
+C:\Users\mathe\OneDrive\Documentos\C#Masterclass\GamingOrganization\Communication\bin\Debug\net10.0\GammingOrganization.Communication.pdb
+C:\Users\mathe\OneDrive\Documentos\C#Masterclass\GamingOrganization\Communication\obj\Debug\net10.0\GammingOrganization.Communication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\OneDrive\Documentos\C#Masterclass\GamingOrganization\Communication\obj\Debug\net10.0\GammingOrganization.Communication.AssemblyInfoInputs.cache
+C:\Users\mathe\OneDrive\Documentos\C#Masterclass\GamingOrganization\Communication\obj\Debug\net10.0\GammingOrganization.Communication.AssemblyInfo.cs
+C:\Users\mathe\OneDrive\Documentos\C#Masterclass\GamingOrganization\Communication\obj\Debug\net10.0\GammingOrganization.Communication.csproj.CoreCompileInputs.cache
+C:\Users\mathe\OneDrive\Documentos\C#Masterclass\GamingOrganization\Communication\obj\Debug\net10.0\GammingOrganization.Communication.sourcelink.json
+C:\Users\mathe\OneDrive\Documentos\C#Masterclass\GamingOrganization\Communication\obj\Debug\net10.0\GammingOrganization.Communication.dll
+C:\Users\mathe\OneDrive\Documentos\C#Masterclass\GamingOrganization\Communication\obj\Debug\net10.0\refint\GammingOrganization.Communication.dll
+C:\Users\mathe\OneDrive\Documentos\C#Masterclass\GamingOrganization\Communication\obj\Debug\net10.0\GammingOrganization.Communication.pdb
+C:\Users\mathe\OneDrive\Documentos\C#Masterclass\GamingOrganization\Communication\obj\Debug\net10.0\ref\GammingOrganization.Communication.dll

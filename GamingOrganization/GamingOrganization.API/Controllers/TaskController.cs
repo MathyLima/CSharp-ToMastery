@@ -24,6 +24,7 @@ namespace GamingOrganization.API.Controllers
         {
             return Ok();
         }
+        /*
         [HttpPost]
         [ProducesResponseType(typeof(ResponseUserTaskJson),StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -31,6 +32,7 @@ namespace GamingOrganization.API.Controllers
         {
             return Created(string.Empty, request);
         }
+        */
         [HttpDelete]
         [Route("{Id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]

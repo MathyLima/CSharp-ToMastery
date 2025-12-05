@@ -17,4 +17,11 @@
     <ProjectReference Include="..\GamingOrganization.Exceptions\GamingOrganization.Exceptions.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UseCases\UserTasks\Delete\" />
+    <Folder Include="UseCases\UserTasks\GetAll\" />
+    <Folder Include="UseCases\UserTasks\GetById\" />
+    <Folder Include="UseCases\UserTasks\Register\" />
+  </ItemGroup>
+
 </Project>
