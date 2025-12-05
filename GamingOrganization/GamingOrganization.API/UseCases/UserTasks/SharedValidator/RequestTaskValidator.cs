@@ -8,6 +8,7 @@ namespace GamingOrganization.API.UseCases.Tasks.SharedValidator
         public RequestTaskValidator() {
             RuleFor(task => task.Title).NotEmpty().WithMessage("A tarefa deve ter um título!");
             RuleFor(task => task.Description).NotEmpty().WithMessage("Adicione ao menos uma pequena descrição!");
+            RuleFor(task => task.TaskLevel).IsInEnum().WithMessage("O level da task tem que existir no Enum");
         }
     }
 }
