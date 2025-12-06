@@ -61,6 +61,25 @@
         "tags": [
           "Task"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestSubTaskJson"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestSubTaskJson"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestSubTaskJson"
+              }
+            }
+          }
+        },
         "responses": {
           "201": {
             "description": "Created",
@@ -1740,6 +1759,24 @@
         },
         "additionalProperties": false
       },
+      "RequestSubTaskJson": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "order": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "RequestUserJson": {
         "type": "object",
         "properties": {
@@ -1884,6 +1921,43 @@
           },
           "value": {
             "$ref": "#/components/schemas/LayoutKind"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SubTask": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "isCompleted": {
+            "type": "boolean"
+          },
+          "order": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "completedDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "userTaskId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "userTask": {
+            "$ref": "#/components/schemas/UserTask"
           }
         },
         "additionalProperties": false
@@ -2659,6 +2733,28 @@
           },
           "user": {
             "$ref": "#/components/schemas/User"
+          },
+          "subTasks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SubTask"
+            },
+            "nullable": true
+          },
+          "totalSubTasks": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "completedSubTasks": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "completionPercentage": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
           }
         },
         "additionalProperties": false

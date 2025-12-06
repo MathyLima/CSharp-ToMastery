@@ -41,7 +41,13 @@
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GammingOrganization.Communication.Requests.UserTask.RequestSubTaskJson",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "GammingOrganization.Communication.Responses.UserTask.ResponseUserTaskJson",

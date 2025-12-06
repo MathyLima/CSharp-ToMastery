@@ -12,5 +12,12 @@ namespace GamingOrganization.API.Entities
         public DateTime? EndDate { get; set; }
         public Guid UserId { get; set; }
         public User User { get; set; } = null!;
+        public ICollection<SubTask> SubTasks { get; set; } = new List<SubTask>();
+        public int TotalSubTasks => SubTasks.Count;
+        public int CompletedSubTasks => SubTasks.Count(st => st.IsCompleted);
+        public decimal CompletionPercentage =>
+            SubTasks.Any()
+                ? Math.Round((decimal)CompletedSubTasks/TotalSubTasks*100,2)
+                :(IsCompleted ? 100 : 0);
     }
 }
